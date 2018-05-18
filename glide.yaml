@@ -1,0 +1,28 @@
+package: github.com/soter/vault-on-google-kubernetes-engine
+import:
+- package: cloud.google.com/go
+  version: 0.22.0
+  subpackages:
+  - storage
+- package: github.com/pkg/errors
+- package: golang.org/x/oauth2
+  version: 7af32f14d0a25aec7873e0683e8e48dcead159a8
+  subpackages:
+  - google
+  - jwt
+- package: google.golang.org/api
+  version: master
+  subpackages:
+  - cloudkms/v1
+- package: google.golang.org/grpc
+  version: v1.12.0
+- package: go.opencensus.io
+  version: v0.9.0
+- package: github.com/golang/protobuf
+  version: v1.1.0
+- package: google.golang.org/genproto
+  version: master
+testImport:
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
